@@ -1,0 +1,32 @@
+builds:
+  - binary: konfig
+    goos:
+      - darwin
+      - linux
+    goarch:
+      - amd64
+      - arm64
+    env:
+      - CGO_ENABLED=0
+    flags:
+      - -mod=vendor
+
+release:
+  prerelease: auto
+
+universal_binaries:
+  - replace: true
+
+brews:
+  -
+    name: konfig
+    homepage: https://github.com/navi-tech/konfig
+    tap:
+      owner: navi-tech
+      name: homebrew-tap
+    commit_author:
+      name: navi-tech
+      email: prashant.pandey@navi.com
+
+checksum:
+  name_template: 'checksums.txt'
