@@ -20,13 +20,13 @@ universal_binaries:
 brews:
   -
     name: konfig
-    homepage: https://github.com/navi-tech/konfig
+    homepage: https://github.com/navi-bot/konfig
     tap:
-      owner: navi-tech
+      owner: navi-bot
       name: homebrew-tap
     commit_author:
-      name: navi-tech
-      email: prashant.pandey@navi.com
+      name: navi-bot
+      email: security-bot@navi.com
 
 checksum:
   name_template: 'checksums.txt'
